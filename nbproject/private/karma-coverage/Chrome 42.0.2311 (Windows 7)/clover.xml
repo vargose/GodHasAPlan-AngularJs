@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1431490546563" clover="3.2.0">
-	<project timestamp="1431490546563"  name="All Files" >
+<coverage generated="1431494061003" clover="3.2.0">
+	<project timestamp="1431494061003"  name="All Files" >
 		<metrics statements="5803"  coveredstatements="1488"  conditionals="3688"  coveredconditionals="447"  methods="1226"  coveredmethods="282"  elements="10717"  coveredelements="2217"  complexity="0"  packages="7"  files="15"  classes="15"  loc="25378"  ncloc="25378" />
 		<package name="..app.bower_components.angular-mocks" >
 			<metrics statements="558"  coveredstatements="171"  conditionals="253"  coveredconditionals="25"  methods="156"  coveredmethods="33" />

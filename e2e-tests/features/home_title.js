@@ -21,11 +21,6 @@ describe('God Has A Plan', function() {
         toEqual("God Has a Plan");
     });
     
-    it('should have the Title God Has a Plan', function() {
-      expect(browser.getTitle()).
-        toEqual("God Has a Plan");
-    });
-    
     it('should have the text "God Has a Plan"', function() {
         expect(element(by.id('title')).getText()).toEqual("God Has a Plan");
     });

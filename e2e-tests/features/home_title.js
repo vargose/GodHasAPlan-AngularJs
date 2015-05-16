@@ -10,7 +10,7 @@ describe('God Has A Plan', function() {
     expect(browser.getLocationAbsUrl()).toMatch("/home");
   });  
   
-  describe('home', function() {
+  describe('home_title', function() {
 
     beforeEach(function() {
       browser.get('index.html#/home');

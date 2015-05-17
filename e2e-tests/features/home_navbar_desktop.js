@@ -4,8 +4,7 @@ describe('home_navbar_mobile', function() {
 
     beforeEach(function() {
         browser.get('index.html#/home');
-        browser.manage().window().setSize(240, 400);
-        element(by.id('mainmenu-expander')).click();
+        browser.manage().window().setSize(1024, 768);        
     });
 
     it('should have a home link with God Has a Plan', function() {
@@ -21,9 +20,7 @@ describe('home_navbar_mobile', function() {
     });
     
     it('should have a link for the Devotionals page"', function() {
-        var devotionalsLink = element(by.id('mainmenu-devotionals-link'));
-        browser.driver.wait(protractor.until.elementIsNotVisible(devotionalsLink));
-        expect(devotionalsLink.getText()).toEqual("Devotionals");
+        expect(element(by.id('mainmenu-devotionals-link')).getText()).toEqual("Devotionals");
     });
     
     it('should navigate to /home when I click "God Has a Plan" home link', function() {

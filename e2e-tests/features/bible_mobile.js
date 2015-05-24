@@ -10,6 +10,10 @@ describe('bible', function() {
     it('should have a version selector', function() {
         expect(element(by.id('version-selector')).isPresent()).toBe(true);
     });
+    
+    it('should have a default version selection of "Version"', function() {
+        expect(element(by.id('version-selector')).$('option:checked').getText()).toEqual('Version');
+    });
 
     
 

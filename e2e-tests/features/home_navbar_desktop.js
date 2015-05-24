@@ -1,6 +1,6 @@
 'use strict';
 
-describe('home_navbar_mobile', function() {
+describe('home_navbar_desktop', function() {
 
     beforeEach(function() {
         browser.get('index.html#/home');

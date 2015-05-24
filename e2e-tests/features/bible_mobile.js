@@ -4,7 +4,7 @@ describe('bible', function() {
 
     beforeEach(function() {
         browser.get('index.html#/bible');
-        browser.manage().window().setSize(240, 400);
+        browser.manage().window().setSize(240, 640);
     });
 
     it('should have a version selector', function() {

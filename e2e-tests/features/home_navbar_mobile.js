@@ -4,7 +4,7 @@ describe('home_navbar_mobile', function() {
 
     beforeEach(function() {
         browser.get('index.html#/home');
-        browser.manage().window().setSize(240, 400);
+        browser.manage().window().setSize(240, 640);
         element(by.id('mainmenu-expander')).click();
     });
 

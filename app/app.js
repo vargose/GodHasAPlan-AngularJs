@@ -4,6 +4,7 @@
 angular.module('GodHasAPlan', [
   'ngRoute',
   'GodHasAPlan.home',
+  'GodHasAPlan.bible',
   'GodHasAPlan.version'
 ]).
 config(['$routeProvider', function($routeProvider) {

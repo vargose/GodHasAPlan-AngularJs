@@ -27,5 +27,10 @@ describe('home_navbar_mobile', function() {
         element(by.id('mainmenu-home-link')).click();
         expect(browser.getLocationAbsUrl()).toMatch("/home");
     });
+    
+    it('should navigate to /bible when I click "Bible" link', function() {
+        element(by.id('mainmenu-bible-link')).click();
+        expect(browser.getLocationAbsUrl()).toMatch("/bible");
+    });
 
 });

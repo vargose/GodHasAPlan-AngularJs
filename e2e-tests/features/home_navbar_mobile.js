@@ -22,13 +22,18 @@ describe('home_navbar_mobile', function() {
     
     it('should have a link for the Devotionals page"', function() {
         var devotionalsLink = element(by.id('mainmenu-devotionals-link'));
-        browser.driver.wait(protractor.until.elementIsNotVisible(devotionalsLink));
+        browser.driver.wait(protractor.until.elementIsVisible(devotionalsLink));
         expect(devotionalsLink.getText()).toEqual("Devotionals");
     });
     
     it('should navigate to /home when I click "God Has a Plan" home link', function() {
         element(by.id('mainmenu-home-link')).click();
         expect(browser.getLocationAbsUrl()).toMatch("/home");
+    });
+    
+    it('should navigate to /bible when I click the "Bible" link', function() {
+        element(by.id('mainmenu-bible-link')).click();
+        expect(browser.getLocationAbsUrl()).toMatch("/bible");
     });
 
 });

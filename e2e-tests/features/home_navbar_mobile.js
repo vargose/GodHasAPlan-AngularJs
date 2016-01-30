@@ -17,7 +17,9 @@ describe('home_navbar_mobile', function() {
     });
 
     it('should have a link for the Studies page"', function() {
-        expect(element(by.id('mainmenu-studies-link')).getText()).toEqual("Studies");
+        var studiesLink = element(by.id('mainmenu-studies-link'));
+        browser.driver.wait(protractor.until.elementIsVisible(studiesLink));
+        expect(studiesLink.getText()).toEqual("Studies");
     });
     
     it('should have a link for the Devotionals page"', function() {

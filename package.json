@@ -3,19 +3,20 @@
   "private": true,
   "version": "0.0.0",
   "description": "A responsive Bible Web Application",
-  "repository": "https://github.com/angular/angular-seed",
+  "repository": "https://github.com/vargose/GodHasAPlan",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.3.1",
-    "chai": "^2.3.0",
-    "chai-as-promised": "^5.0.0",
-    "cucumber": "^0.4.8",
     "http-server": "^0.6.1",
-    "karma": "~0.10",
-    "karma-coverage": "^0.3.1",
+    "jasmine-core": "^2.3.4",
+    "karma": "~0.12",
+    "karma-coverage": "^0.5.3",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.3.5",
     "karma-junit-reporter": "^0.2.2",
-    "protractor": "^1.1.1",
-    "shelljs": "^0.2.6"
+    "protractor": "^2.1.0",
+    "shelljs": "^0.2.6"     
   },
   "scripts": {
     "postinstall": "bower install",

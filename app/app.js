@@ -10,3 +10,4 @@ angular.module('GodHasAPlan', [
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});
 }]);
+
